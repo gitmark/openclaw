@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    // TypeScript: Enables strict type checking for better code safety
+    "strict": true,
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+
+    // Enable decorators for Lit components
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+
+    // Output configuration
+    "outDir": "./dist",
+    "rootDir": "./src",
+
+    // Type definitions
+    "types": ["node", "vite/client"],
+    "lib": ["ES2022", "DOM", "DOM.Iterable"]
+  },
+  "include": ["src/**/*", "tests/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
