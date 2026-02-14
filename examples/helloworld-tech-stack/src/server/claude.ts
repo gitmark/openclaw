@@ -9,7 +9,8 @@ import Anthropic from "@anthropic-ai/sdk";
  */
 
 // Initialize the Anthropic client with API key from environment
-const anthropic = new Anthropic({
+// Note: Unused in mock mode, but kept for easy switching to real API
+const _anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY || "",
 });
 
